@@ -1,5 +1,5 @@
 <?php
-    $conn = mysqli_connect("localhost", "root", "root", "bookorama");
+    $conn = mysqli_connect("localhost", "root", "", "bookorama");
     if ($conn->connect_errno) {
         die("Connection failed: " . $conn->connect_error);
     }
@@ -10,4 +10,3 @@
         $data = htmlspecialchars($data);
         return $data;
     }
-?>
